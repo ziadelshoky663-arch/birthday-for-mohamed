@@ -351,6 +351,7 @@ footer { height: 160px; border-top: 1px solid var(--line); display: flex; justif
   .memory-card { min-height: 520px; align-content: center; }
 }
 @media (max-width: 560px) {
+  .hero::after { display: none; }
   .nav, .hero-grid { width: calc(100% - 32px); }
   .brand { font-size: 13px; }
   .hero-grid { padding-top: 45px; }
