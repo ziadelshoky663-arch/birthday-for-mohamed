@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>محمد — عيد ميلادك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="hero">
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <div class="brand"><span class="brand-mark">م</span><span>محمد</span></div>
+      <button class="sound-button" id="soundButton" type="button" aria-label="تشغيل الموسيقى">
+        <span class="sound-bars"><i></i><i></i><i></i></span>
+        <span id="soundLabel">صوت</span>
+      </button>
+    </nav>
+
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow"><span></span> هدية عيد ميلاد من القلب — 21.11</p>
+        <h1>كل سنة<br><em>وأنت قريب في القلب</em></h1>
+        <p class="lead">وأنت في شرم الشيخ، اليوم ده كله ليك. افتح الفصول دي من موبايلك، وخد لحظتك وسط البحر والهدوء.</p>
+        <button class="primary-button" id="openGift" type="button">
+          ادخل حكاية محمد
+          <span>↙</span>
+        </button>
+      </section>
+
+      <aside class="gift-seal" aria-label="هدية خاصة لمحمد">
+        <div class="seal-orbit">
+          <span>هدية خاصة • شرم الشيخ •</span>
+          <strong>م</strong>
+        </div>
+        <p>إليك محمد — من أخوك الصغير</p>
+        <h2>من قلب أخوك<br>إلى قلبك</h2>
+        <div class="seal-date">21 <i></i> 11</div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="countdown-section" id="countdownSection">
+      <p>العدّ المستنيّ يومه</p>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span>يوم</span></div>
+        <b>:</b>
+        <div><strong id="hours">00</strong><span>ساعة</span></div>
+        <b>:</b>
+        <div><strong id="minutes">00</strong><span>دقيقة</span></div>
+      </div>
+    </section>
+
+    <section class="chapters" id="chapters">
+      <div class="chapters-heading">
+        <p>هدية عيد ميلاد — شرم الشيخ</p>
+        <h2>خمس فصول وقلب واحد</h2>
+        <div class="chapter-progress"><span id="chapterProgress"></span></div>
+      </div>
+
+      <div class="chapter-list">
+        <article class="chapter active" data-chapter="1">
+          <button class="chapter-toggle" type="button" aria-expanded="true">
+            <span class="chapter-number">01</span>
+            <span class="chapter-title"><small>الفصل الأول</small><strong>الافتتاحية</strong></span>
+            <span class="chapter-state">مفتوح</span>
+          </button>
+          <div class="chapter-body">
+            <p>اختار ذكرى حلوة وحددها كأول لحظة احتفال بيومك وسط أجمل مكان في شرم الشيخ.</p>
+            <button class="chapter-action" type="button">أتمم الفصل الأول</button>
+          </div>
+        </article>
+
+        <article class="chapter" data-chapter="2">
+          <button class="chapter-toggle" type="button" aria-expanded="false" disabled>
+            <span class="chapter-number">02</span>
+            <span class="chapter-title"><small>الفصل الثاني</small><strong>الضحكة</strong></span>
+            <span class="chapter-state">مقفول</span>
+          </button>
+          <div class="chapter-body">
+            <p>افتكر أكتر ضحكة فرحتك؛ امسك موبايلك وسجّل لحظة ضحكك عشان ده وقود يومك الجميل.</p>
+            <button class="chapter-action" type="button">أتمم الفصل الثاني</button>
+          </div>
+        </article>
+
+        <article class="chapter" data-chapter="3">
+          <button class="chapter-toggle" type="button" aria-expanded="false" disabled>
+            <span class="chapter-number">03</span>
+            <span class="chapter-title"><small>الفصل الثالث</small><strong>المواقف</strong></span>
+            <span class="chapter-state">مقفول</span>
+          </button>
+          <div class="chapter-body">
+            <p>اختار موقف واحد بترجعله دايمًا، واكتب سطر واحد بس يشرح ليه اللحظة دي مهمة ليك.</p>
+            <button class="chapter-action" type="button">أتمم الفصل الثالث</button>
+          </div>
+        </article>
+
+        <article class="chapter" data-chapter="4">
+          <button class="chapter-toggle" type="button" aria-expanded="false" disabled>
+            <span class="chapter-number">04</span>
+            <span class="chapter-title"><small>الفصل الرابع</small><strong>رغبة جديدة</strong></span>
+            <span class="chapter-state">مقفول</span>
+          </button>
+          <div class="chapter-body">
+            <p>اختر رغبة واحدة تتمنى ربنا تحققها لك السنة دي، واكتبها كأنها وعد لنفسك بالراحة والنجاح.</p>
+            <button class="chapter-action" type="button">أتمم الفصل الرابع</button>
+          </div>
+        </article>
+
+        <article class="chapter final-chapter" data-chapter="5">
+          <button class="chapter-toggle" type="button" aria-expanded="false" disabled>
+            <span class="chapter-number">05</span>
+            <span class="chapter-title"><small>الفصل الخامس</small><strong>المفاجأة الكبيرة</strong></span>
+            <span class="chapter-state">مقفول</span>
+          </button>
+          <div class="chapter-body">
+            <p>الفصل الأخير: استمتع بجمال البحر، وخد نفس هادي، وبعدين افتح الرسالة الختامية اللي معمولة مخصوص ليك.</p>
+            <button class="chapter-action" type="button">افتح المفاجأة النهائية</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories" id="memories">
+      <div class="section-heading">
+        <p>مختارات الذكريات</p>
+        <h2>ذكرياتنا مع محمد</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="memory-card">
+          <button class="photo photo-1" type="button" aria-label="إضافة صورة الذكرى الأولى">
+            <span>اضغط لإضافة صورة</span>
+            <span class="place-label">الذكرى ١</span>
+          </button>
+          <div class="memory-copy">
+            <span>01 / الذكرى الأولى</span>
+            <h3>الضحكة اللي مابتتنساش</h3>
+            <p>من أول ضحكة بيننا لآخر حكاية نضحك عليها، وجودك دايمًا بيكون هو السر في اليوم الحلو.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reverse">
+          <button class="photo photo-2" type="button" aria-label="إضافة صورة الذكرى الثانية">
+            <span>اضغط لإضافة صورة</span>
+            <span class="place-label">الذكرى ٢</span>
+          </button>
+          <div class="memory-copy">
+            <span>02 / اللحظة الجميلة</span>
+            <h3>أجمل أيامنا معاك</h3>
+            <p>مش محتاجين مناسبة عشان نحكي حكاية حلوة؛ كل مرة نفتكر فيها ضحكتك، اليوم يبقى أحلى.</p>
+          </div>
+        </article>
+
+        <article class="memory-card">
+          <button class="photo photo-3" type="button" aria-label="إضافة صورة الذكرى الثالثة">
+            <span>اضغط لإضافة صورة</span>
+            <span class="place-label">الذكرى ٣</span>
+          </button>
+          <div class="memory-copy">
+            <span>03 / الفضل والموقف</span>
+            <h3>وقت ما كنت دايمًا سند</h3>
+            <p>عمرنا ما ننسى مواقفك الطيبة ولا الوقفة اللي كانت في وقتها، لأنها دايمًا طلتها عربية من القلب.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reverse">
+          <button class="photo photo-4" type="button" aria-label="إضافة صورة الذكرى الرابعة">
+            <span>اضغط لإضافة صورة</span>
+            <span class="place-label">الذكرى ٤</span>
+          </button>
+          <div class="memory-copy">
+            <span>04 / لحظة محفوظة</span>
+            <h3>صورة بتقول حكاية</h3>
+            <p>كل صورة لينا معاك فيها ذكرى، وكل ذكرى ذكرك قدّامنا حزين ولا فرحان؛ دايمًا فيها حب.</p>
+          </div>
+        </article>
+
+        <article class="memory-card">
+          <button class="photo photo-5" type="button" aria-label="إضافة صورة الذكرى الخامسة">
+            <span>اضغط لإضافة صورة</span>
+            <span class="place-label">الذكرى ٥</span>
+          </button>
+          <div class="memory-copy">
+            <span>05 / العمر الجاي</span>
+            <h3>لسه أحلى سنينك قدامك</h3>
+            <p>السنة الجديدة رزق وراحة وسعادة، وإن شاء الله دايمًا فخور بيك ومتمم معاك الحكايات الحلوة.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="letter-card" id="letterCard">
+        <div class="letter-front">
+          <span class="stamp">21</span>
+          <p>رسالة مختومة</p>
+          <h2>تفتحها في يوم عيد ميلادك</h2>
+          <button id="openLetter" type="button">افتح المغلف</button>
+        </div>
+        <div class="letter-back" aria-hidden="true">
+          <p class="letter-kicker">إلى محمد، في يومه الخاص</p>
+          <h2>كل سنة وأنت طيب يا محط 😂❤️</h2>
+            <p>كل سنة وأنت طيب، وربنا يبارك لك أيامك وينورلك الطريق يا محمد ويحفظك.</p>
+          <p class="signature">مع كل الحب — أخوك الصغير <span>♡</span></p>
+          <button id="closeLetter" type="button">اقفل الرسالة</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>محمد — 21.11</span>
+    <p>كل سنة وأنت بخير</p>
+  </footer>
+
+  <input id="photoInput" type="file" accept="image/*" hidden>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
